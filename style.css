@@ -38,12 +38,6 @@ main {
   color: cornflowerblue;
 }
 
-.yw-widget-full {
-  position: absolute;
-  left: 165px;
-  top: 650px
-}
-
 .poster {
   border: dotted fuchsia;
   background-color: black;
