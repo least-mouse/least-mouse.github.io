@@ -21,31 +21,21 @@ body {
   overflow-y: scroll;
 }
 
-.navbar {
+nav {
+  width: 200px;
   border: dashed deeppink;
   background-color: cornsilk;
   color: crimson;
-  padding: 1em;
-  margin-left: 10px;
-  margin-right: 10px;
-  position: absolute;
-  width: max-content;
-  top: 100px;
-  left: 165px;
+  margin-left: 200px;
+  padding: 2em;
 }
 
-.main {
+main {
+  margin-left: 60px;
+  width: 100%;
   border: solid darkviolet;
   background-color: cornsilk;
   color: cornflowerblue;
-  position: absolute;
-  padding: 1em;
-  margin-left: 10px;
-  margin-right: 10px;
-  top: 100px;
-  left: 450px;
-  width: 540px;
-  overflow-wrap: normal;
 }
 
 .yw-widget-full {
@@ -67,7 +57,9 @@ body {
   transform: rotate(30deg);
 }
 
-.header {
+header {
+  margin-bottom: 20px;
+  max-width:100%;
   background-color: transparent;
   color: white;
   text-align: center;
