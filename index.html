@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse lives here</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    <script src="/load.js"></script> 
+    
+     <script>     
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     var site_data = JSON.parse(this.responseText);
+     var num_arr = site_data.info.views.toString().split("");
+var num_str = "";
+for (i = 0; i < num_arr.length; i++) {
+ num_str += num_arr[i];
+ if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+var date_str = site_data.info.last_updated;
+var date_obj = new Date(site_data.info.last_updated);
+document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+}
+document.getElementById("hitcount").innerHTML = num_str;
+    }
+  };
+  xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=least-mouse", true);
+  xhttp.send();</script>
+  </head>
+  <body>
+    <div id="footer"></div>
+    <div id="header"></div>
+    <div id="navigation"></div>
+    
+    <div class="main">    
+      <h1>Welcome to my home on the web!</h1>
+
+      <p>hellooo this is my home(page).<br><br>
+      you're standing in front of a small, garishly decorated house at the end of a dusty desert trail, striking mountains standing tall in the background. whether searching for me, or aimlessly wandering the passageways connecting our world, you've found me. i (a cuteish bookish girl in a comfy sweater with glasses) open the door and greet you with a smile and an embrace (if you're comfy with one). i let you inside, and you're hit by the sight of stars on the wallpaper inexplicably flickering. it's garish, but i like it. i offer you your favorite drink and invite you to stay a while. "live and drink, friend." :)</p>
+      <p>last updated: <span id="lastupdate"></span></p>
+      <p>you are vistor number: <span id="hitcount"></span></p>
+    
+      <div class="scroll-container">
+        <h3>stuff</h3>
+          <a href="https://neocities.org"><img src="/neocities.gif"></a>
+          <a href="https://yesterweb.org/say-no-to-web3"><img src="/images/roly-saynotoweb3.gif"></a>
+        <h3>other's websites/people</h3>
+          <a href="https://auzziejay.com"><img src="https://auzziejay.com/images/auzzie1.gif" alt="auzzie jay"></a>
+          <a href="https://lu.tiny-universes.net"><img src="/wannachill.gif"></a>
+          <a href="https://vastrecs.neocities.org"><img src="https://files.catbox.moe/ew6idv.gif" alt="vastrecs"></a>
+          <a href="https://gildedware.neocities.org/index.html" target="_blank"> <img src="https://gildedware.neocities.org/Page%20Assets/button%202.gif"></a>
+          <a href="https://cassowarylake.neocities.org/music.html">cassowarylake (i couldn't for the life of me find a button if it turns out you have one email me or something sorry)</a>
+      </div>
+      <div id="transring">
+        <script type="text/javascript" src="https://sugarforbrains.neocities.org/transring/onionring-variables.js"></script>
+        <script type="text/javascript" src="https://sugarforbrains.neocities.org/transring/onionring-widget.js"></script>
+      </div>
+
+    </div>
+    <div class="poster rotated">
+      <p>this site best viewed on a computer screen!</p>
+    </div>
+    
+    <div class="yw-widget-full" data-yw-url="https://least-mouse.neocities.org"></div>
+    <script src="https://yesterweb.org/js/widget.js"></script>
+    
+  </body>
+</html>
