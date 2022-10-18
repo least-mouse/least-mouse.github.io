@@ -43,10 +43,8 @@ main {
   border: dotted fuchsia;
   background-color: black;
   color: lime;
-  position: absolute;
   padding: 1em;
-  top: 450px;
-  left: 55px;
+  margin-top: 20px;
 }
 .rotated {
   transform: rotate(30deg);
