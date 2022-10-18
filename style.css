@@ -26,7 +26,7 @@ nav {
   border: dashed deeppink;
   background-color: cornsilk;
   color: crimson;
-  margin-left: 100px;
+  margin-left: 150px;
   padding: 2em;
   height: min-content;
 }
@@ -37,6 +37,7 @@ main {
   border: solid darkviolet;
   background-color: cornsilk;
   color: cornflowerblue;
+  padding: 1em;
 }
 
 .poster {
