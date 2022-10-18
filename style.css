@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-  width: 200px;
+  width: 300px;
   border: dashed deeppink;
   background-color: cornsilk;
   color: crimson;
@@ -44,7 +44,6 @@ main {
   background-color: black;
   color: lime;
   padding: 1em;
-  margin-top: 20px;
   width: 350px;
 }
 .rotated {
