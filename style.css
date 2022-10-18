@@ -28,6 +28,7 @@ nav {
   color: crimson;
   margin-left: 200px;
   padding: 2em;
+  max-height: fit-content;
 }
 
 main {
