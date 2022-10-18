@@ -45,6 +45,7 @@ main {
   color: lime;
   padding: 1em;
   margin-top: 5px;
+  width: content;
 }
 .rotated {
   transform: rotate(30deg);
